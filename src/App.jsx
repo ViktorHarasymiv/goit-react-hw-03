@@ -15,8 +15,10 @@ function App() {
 
   const DATA_LIST = JSON.parse(DATA) == 0  ? initialList : JSON.parse(DATA);
 
+
   const [contact, setContact] = useState(DATA_LIST);
   const [search, setSearch] = useState('');
+  
 
   const addContact = (newContact) => {
     setContact((prevList) => {
