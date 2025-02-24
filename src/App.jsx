@@ -11,12 +11,12 @@ import ContactList from './components/ContactList/ContactList'
 
 function App() {
 
-  const DATA = window.localStorage.getItem("data-contact");
+  // const DATA = window.localStorage.getItem("data-contact");
 
-  const DATA_LIST = JSON.parse(DATA) == 0  ? initialList : JSON.parse(DATA);
+  // const DATA_LIST = JSON.parse(DATA) == 0  ? initialList : JSON.parse(DATA);
 
 
-  const [contact, setContact] = useState(DATA_LIST);
+  const [contact, setContact] = useState(initialList);
   const [search, setSearch] = useState('');
   
 
