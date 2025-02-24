@@ -7,12 +7,13 @@ import * as Yup from "yup";
 import style from './style.module.css';
 
   const FeedbackSchema = Yup.object().shape({
-  username: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("Поле обов'язкове!"),
+  username: Yup.string().min(2, "Too Short!").max(12, "Too Long!").required("Поле обов'язкове!"),
   phone: Yup.number()
   .typeError("That doesn't look like a phone number")
   .positive("A phone number can't start with a minus")
   .integer("A phone number can't include a decimal point")
   .min(8)
+  .max(12)
   .required("Поле обов'язкове!"),
   });
 

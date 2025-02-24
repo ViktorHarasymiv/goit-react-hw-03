@@ -3,14 +3,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --light-dark: rgb(118, 118, 118);
 }
 
 a {
@@ -27,6 +25,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 }
 
 h1 {
@@ -44,6 +45,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -53,14 +55,25 @@ button:hover {
 }
 
 button:focus,
-button:focus-visible {
+button:focus-visible{
   outline: 4px auto -webkit-focus-ring-color;
 }
 
 input {
+  margin: 0;
+  padding: 0;
   padding-inline: 10px;
-
   font-size: 1.3em;
+
+  background-color: #3f3f3f;
+
+  color: inherit;
+
+  border-radius: 4px;
+  border: none;
+
+  outline: 1.5px solid  var(--light-dark);
+  
 }
 
 ul,ol {
@@ -69,17 +82,18 @@ ul,ol {
   list-style: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input[type="text" i] { 
+  padding-block: 0;
+
+}
+
+input[type="search" i] { 
+  list-style: none;
+  list-style-image: none;
+}
+
+input:hover,input:focus {
+  outline: 2px solid #ffbb00 !important;
 }
 
 main {
