@@ -11,9 +11,8 @@ import style from './style.module.css';
   phone: Yup.number()
   .typeError("That doesn't look like a phone number")
   .positive("A phone number can't start with a minus")
-  .integer("A phone number can't include a decimal point")
-  .min(8)
-  .max(12)
+  .integer("A phone number can't include a deci mal point")
+  .min(2)
   .required("Поле обов'язкове!"),
   });
 
