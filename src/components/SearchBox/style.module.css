@@ -1,0 +1,24 @@
+.search {
+    margin: 0 auto;
+
+    position: relative;
+
+    margin-bottom: 60px;
+}
+
+.search svg {
+    position: absolute;
+
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.search__input {
+    padding-left: 25px;
+    width: 260px;
+    height: 30px;
+
+    font-size: 1em;
+    letter-spacing: .1em;
+}

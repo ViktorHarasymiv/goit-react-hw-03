@@ -1,0 +1,39 @@
+.form {
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 20px;
+}
+
+.form input {
+    width: 240px;
+    height: 40px;
+}
+
+label {
+    align-self: flex-start;
+}
+
+.form span {
+    position: relative;
+    
+    padding-left: 30px;
+
+    color: #e6bc03;
+    letter-spacing: .1em;
+}
+
+.form span::before {
+    position: absolute;
+
+    content: "";
+
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    background: url(./ico/error.png) no-repeat 100%;
+}

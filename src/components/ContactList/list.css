@@ -1,0 +1,23 @@
+.tile__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.tile__item {
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid #6666;
+
+    box-shadow: -4px -4px 12px hsla(0, 0%, 100%, .2), 4px 4px 40px rgba(0, 0, 0, .45);
+}
+
+@media screen and (max-width: 767.98px) {
+    .tile__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

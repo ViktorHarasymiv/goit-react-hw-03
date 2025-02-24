@@ -1,0 +1,26 @@
+.tile__info {
+    display: inherit;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tile__name {
+    font-size: 1.1em;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+}
+
+.tile__button {
+    align-self: center;
+}
+
+.tile__button > button {
+    border-color: #666;
+}
+
+
+.tile__button:hover > button {
+    border-color: #646cff;
+}
