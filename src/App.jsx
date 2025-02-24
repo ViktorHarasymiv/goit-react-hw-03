@@ -14,7 +14,7 @@ function App() {
   const DATA = window.localStorage.getItem("data-contact");
 
   const parsedData = JSON.parse(DATA);
-  const DATA_LIST = Array.isArray(parsedData) && parsedData.length === 0 ? initialList : parsedData;
+  const DATA_LIST = Array.isArray(parsedData) && parsedData.length === 0 || !parsedData ? initialList : parsedData;
 
 
   const [contact, setContact] = useState(DATA_LIST);
